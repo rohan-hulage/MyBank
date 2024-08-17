@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+ 
+body {
+    background-color: #f5f7fa;
+    font-family: Arial, sans-serif;
+}
+
+.account-page {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 60%;
+    height: 790px;
+    padding: 20px;
+    margin-left: 200px;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 8px 8px rgba(0.1, 0.1, 0.1, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+ }
+   
+
+.account-box {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 40px;
+}
+
+.account-box .col {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    /* border-right: 0.5px solid #03AED2;
+    border-left: 0.5px solid #03AED2; */
+}
+
+.account-box .account-details-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    border-bottom: 0.5px solid #03AED2; 
+    border-top: 0.5px solid #03AED2;
+    background-color: #f5f7fa;
+}
+
+.transactions {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: baseline;
+   
+} 
+
+.transactions .transaction-filter {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 20px;
+}
+
+
+
+.transaction-filter .custom-range-filter {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.transaction-filter .custom-range-filter .custom-range {
+    display: flex;
+    flex-direction: column;
+}
+
+.transaction-filter .custom-range-filter .custom-range .custom-input {
+    display: flex;
+    gap: 5px;
+}
+
+.custom-input input {
+    border: 0.5px solid #03AED2;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.transactions .filter {
+    border: 0.5px solid #03AED2;
+    border-radius: 5px;
+    width: 110px;
+    height: 40px;
+
+  }
+ * {
+   -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+           box-sizing: border-box;
+ }
+ *:before,
+ *:after {
+   -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+           box-sizing: border-box;
+
+}
+
+.transactions .transaction-filter .filter option {
+    text-align: center;
+}
+
+
+#table-scroll {
+    height: 250px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-top:20px;
+}
+
+#table-wrapper table {
+    position: sticky;
+    width:100%;
+    border-collapse: collapse;
+}
+
+.transaction-table .table-column{
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+
+.transaction-table .transaction-table-th{
+    font-size: large;
+    align-items: baseline;
+    border-bottom: 0.5px solid #03AED2;
+    text-align: left;
+    padding: 20px;
+}
+
+.transaction-table .table-row {
+    z-index: 1;
+}
+
+.transaction-table .table-row .table-row-elements {
+    font-weight: 400;
+    font-size: medium;
+}
+
+
+
+
+
+

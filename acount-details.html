@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acount Details</title>
+    <link rel="stylesheet" href="acount-details.css">
+</head>
+<body>
+    <div class="account-page">
+        <div>
+            <h1>Account Details</h1>
+        </div>
+    
+        <div class="account-box">
+            <div class="col">
+                <div class="account-details-box">
+                    <p>Name</p>
+                    <h3 class="account-name"></h3>
+                </div>
+                <div class="account-details-box">
+                    <p>Account Number</p>
+                    <h3 class="account-number"></h3>
+                </div>
+                <div class=" account-details-box">
+                    <p>Account Type</p>
+                    <h3 class="account-type"></h3>
+                </div>
+            </div>
+            
+            <div class="col">    
+                <div class=" account-details-box">
+                    <p>IFSC Code</p>
+                    <h3 class="ifsc-code"></h3>
+                </div>
+                <div class=" account-details-box">
+                    <p>Bank Name</p>
+                    <h3 class="bank-name"></h3>
+                </div>
+                <div class=" account-details-box">
+                    <p>Branch Name</p>
+                    <h3 class="branch-name"></h3>
+                </div>
+            </div>    
+        </div>
+
+        <div class="transactions">
+            <div class="transaction-filter">
+                <h1>Transactions</h1>
+                <div class="custom-range-filter">
+                    <div class="custom-range">
+                        <p>Custom Range</p>
+                        <div class="custom-input">
+                            <input type="text" name="from" value="From">
+                            <input type="text" name="to" value="To">
+                        </div>
+                    </div>
+        
+                    <select name="filter" class="filter" id="transaction-filter">
+                        <option value="15">Latest</option>
+                        <option value="30">One Month</option>
+                        <option value="90">Three Months</option>
+                        <option value="180">Six Months</option>
+                    </select>
+                </div>
+            </div>
+            <div id="table-wrapper">
+                <div id="table-scroll">
+                    <table class="transaction-table">
+                        <thead>
+                            <tr class="table-column">
+                                <th class="transaction-table-th table-column-elements">Transaction Details</th>
+                                <th class="transaction-table-th table-column-elements">Date</th>
+                                <th class="transaction-table-th table-column-elements">Transaction Id</th>
+                                <th class="transaction-table-th table-column-elements">Amount</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr class="table-row">
+                                <td class="transaction-table-th table-row-elements row-element-one"></td>
+                                <td class="transaction-table-th table-row-elements row-element-two"></td>
+                                <td class="transaction-table-th table-row-elements row-element-three"></td>
+                                <td class="transaction-table-th table-row-elements row-element-four"></td>
+                            </tr>
+                           
+                        </tbody>
+                    </table>
+                </div>  
+            </div>
+        </div>
+    </div>
+
+
+    <script src="account-details.js"></script>
+</body>
+</html>
